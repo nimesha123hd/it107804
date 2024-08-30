@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Tours - Explore the World</title>
     <link rel="stylesheet" href="styles.css">
+	<link href="bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -26,47 +26,45 @@
     </header>
 
     <section class="hero">
-	<h1>Explore Breathtaking Destinations with Jay Tours</h1>
+        <div class="hero-text">
+            <h1>Explore Breathtaking Destinations with Jay Tours</h1>
             <p>Your dream vacation starts here.</p>
             <a href="#destinations" class="btn">Discover More</a>
         </div>
     </section>
 
     <section id="destinations" class="destinations">
-    <div class="container">
-        <h2>Top Destinations</h2>
-        <div class="destinations-grid">
-            <div class="destination">
-			<h3>Sri Lanka</h3>
-                <img src="images/Srilanka.jpg" alt="Sri Lanka">
-            </div>
-            <div class="destination">
-			<h3>Rome</h3>
-                <img src="images/Rome.jpg" alt="Rome">
-            </div>
-            <div class="destination">
-			<h3>Maldives</h3>
-                <img src="images/Maldives.jpg" alt="Maldives">
-            </div>
-            <div class="destination">
-			 <h3>Switzerland</h3>
-                <img src="images/Switzerland.jpg" alt="Switzerland">
-            </div>
-            <div class="destination">
-			                <h3>Thailand</h3>
-                <img src="images/Thailand.jpg" alt="Thailand">
-
+        <div class="container">
+            <h2>Top Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination">
+                    <h3>Sri Lanka</h3>
+                    <img src="images/Srilanka.jpg" alt="Sri Lanka">
+                </div>
+                <div class="destination">
+                    <h3>Rome</h3>
+                    <img src="images/Rome.jpg" alt="Rome">
+                </div>
+                <div class="destination">
+                    <h3>Maldives</h3>
+                    <img src="images/Maldives.jpg" alt="Maldives">
+                </div>
+                <div class="destination">
+                    <h3>Switzerland</h3>
+                    <img src="images/Switzerland.jpg" alt="Switzerland">
+                </div>
+                <div class="destination">
+                    <h3>Thailand</h3>
+                    <img src="images/Thailand.jpg" alt="Thailand">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
- 
     <section id="team" class="team">
         <div class="container">
             <h2>Our Team Leads</h2>
-			<p>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments towards organizational objectives. It is the fuel that allows common people to attain uncommon results</p>
+            <p>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments towards organizational objectives. It is the fuel that allows common people to attain uncommon results</p>
             <div class="team-grid">
                 <div class="team-member">
                     <img src="images/Hugo.jpg" alt="Hugo Silva">
@@ -87,10 +85,30 @@
         </div>
     </section>
 
+    <section id="stat" class="stat">
+        <div class="stats-container">
+            <div class="stats-item">
+                <p class="stat-number">250k +</p>
+                <p>Happy clients</p>
+            </div>
+            <div class="stats-item">
+                <p class="stat-number">800 +</p>
+                <p>Weekly Reservations</p>
+            </div>
+            <div class="stats-item">
+                <p class="stat-number">150</p>
+                <p>Travel Partners</p>
+            </div>
+            <div class="stats-item">
+                <p class="stat-number">15</p>
+                <p>Branches</p>
+            </div>
+        </div>
+    </section>
 
     <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2>What Our Clients Say</h2>
+            <h2>OVERHEAD FROM TRAVELLERS</h2>
             <div class="testimonials-grid">
                 <div class="testimonial">
                     <h3>Hotel Eucalyptus</h3>
@@ -111,26 +129,71 @@
         </div>
     </section>
 
-
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form>
+    <div class="container">
+        <h2>Contact us</h2>
+        <form>
+            <div class="inline-fields">
                 <input type="text" placeholder="First Name" required>
                 <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+            </div>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Phone Number" required>
+			<div class="inline-checkbox">
+                <input type="checkbox" id="subscribe" name="subscribe" required>
+                <label for="subscribe">Subscribe to our Newsletter</label>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+		
+    </div>
+</section>
 
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Jay Tours. All rights reserved.</p>
+   <footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Help center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of use</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-column">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Destinations</h4>
+            <ul>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Cities</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Properties</h4>
+            <ul>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Affiliates</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+94112346657">+94 112 346 657</a></li>
+                <li><a href="tel:+94112346657">+94 112 346 657</a></li>
+                <li><address>No. 056 Havelock Town, Colombo 05, Sri Lanka</address></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>All rights reserved</p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 
 </html>
